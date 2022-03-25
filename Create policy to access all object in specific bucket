@@ -1,0 +1,15 @@
+{
+    "Version": "2012-10-17",
+    "Id": "Policy1648269578900",
+    "Statement": [
+        {
+            "Sid": "Stmt1648269574517",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::723265400375:user/velocity"
+            },
+            "Action": "s3:*",
+            "Resource": "arn:aws:s3:::pravin121bucket"
+        }
+    ]
+}
