@@ -1,0 +1,17 @@
+Sudo yum update
+sudo yum install automake fuse fuse-devel gcc-c++ git libcurl-devel libxml2-devel make openssl-devel
+git clone https://github.com/s3fs-fuse/s3fs-fuse.git
+(compile & install the codes)
+cd s3fs-fuse
+./autogen.sh
+./configure --prefix=/usr --with-openssl
+make
+sudo make install
+which s3fs
+Create a role S3-mounting-role 
+sudo mkdir /demobucket
+sudo vi  /etc/fstab
+sudo mount -a
+df -h
+
+	Thank you!
